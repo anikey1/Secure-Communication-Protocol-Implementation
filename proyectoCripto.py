@@ -160,8 +160,6 @@ class Device:
             "device_public_key": serialize_public_key(self.public_key),
         }
         print_status("DEVICE", "Mensaje de handshake creado", "SUCCESS")
-        print("[devide] Mensaje original a enviar:", mensaje.decode())
-
         print_status("DEVICE", f"Nonce generado: {self.nonce.hex()[:16]}...", "INFO")
         print_status("DEVICE", "Enviando solicitud de conexión al servidor", "SENDING")
         print_status("DEVICE", f"Handshake message 1 completo: {json.dumps(message, indent=2)}", "INFO")
@@ -351,4 +349,3 @@ if __name__ == "__main__":
     print("  • Integridad de mensajes: VERIFICADA")
     print("  • Resistencia a ataques: GARANTIZADA")
     print_separator()
-
