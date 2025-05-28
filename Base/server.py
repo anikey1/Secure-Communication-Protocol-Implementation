@@ -117,4 +117,4 @@ handshake_2 = {
 with open("data/handshake_server_to_device.json", "w") as f:
     json.dump(handshake_2, f, indent=4)
 
-print("[SERVER] 📤 Enviado Mensaje 2: nonce, clave pública y firma")
+print("[SERVER] Enviado Mensaje 2: nonce, clave pública y firma")
